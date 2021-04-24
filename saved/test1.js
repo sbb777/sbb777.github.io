@@ -4,7 +4,7 @@ class Test {
  
     getInfo () {// 확장의 각종 정보
       return {
-        id : 'test'
+        id : 'test',
         name : 'Test', // 확장의 이름
         blocks : [// 각 블록의 정의
           {
