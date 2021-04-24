@@ -1,9 +1,12 @@
 class NitroBlock {
+
+    constructor() { }
     getInfo() {
         return {
             "id": "NitroBlock",
             "name": "NitroBlock",
-            "blocks": [{
+            "blocks": [
+                {
                     "opcode": "substringy",
                     "blockType": "reporter",
                     "text": "letters [num1] through [num2] of [string]",
@@ -23,12 +26,14 @@ class NitroBlock {
                     }
                 },
             ],
-        "menus": { //we will get back to this in a later tutorial
+            "menus": { //we will get back to this in a later tutorial
+            }
         }
-    };
-    substringy({num1, num2, string}) 
+    }
+    substringy(num1, num2, string) {
         return string.substring(num1 - 1, num2);
-    
+    }
+
 }
-}
-Scratch.extensions.register(new NitroBlock())
+
+Scratch.extensions.register(new NitroBlock());
