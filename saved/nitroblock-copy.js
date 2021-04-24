@@ -36,3 +36,4 @@ class NitroBlock {
 
 }
 
+Scratch.extensions.register(new NitroBlock());
